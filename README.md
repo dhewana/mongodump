@@ -10,6 +10,11 @@ BACKUP_PATH = '/home/user/dbname/'
 ```
 Note : The `/` at the end of `BACKUP_PATH` is **important**.
 
+## Allow executable
+```
+chmod +x mongodump.py
+```
+
 ## Cron job daily example
 ```
 20 0 * * * /usr/bin/python3 /home/user/mongodump.py > /home/user/mongodump.log
