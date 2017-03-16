@@ -19,3 +19,8 @@ chmod +x mongodump.py
 ```
 20 0 * * * /usr/bin/python3 /home/user/mongodump.py > /home/user/mongodump.log
 ```
+
+## Cron job to clean up the mongodump log
+```
+0 1 * * sun echo "empty" > /home/user/mongodump.log
+```
